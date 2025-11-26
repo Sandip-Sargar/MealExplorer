@@ -18,7 +18,7 @@ Features
 - **Smart Caching**: Custom in-memory LRU (Least Recently Used) caching layer to minimize API requests and improve performance.
 - **Responsive Design**: Fully responsive UI built with Tailwind CSS, supporting mobile, tablet, and desktop views.
 
-## 🛠️ Tech Stack
+ Tech Stack
 
 - **Frontend**: React 19, TypeScript
 - **Styling**: Tailwind CSS
@@ -26,7 +26,7 @@ Features
 - **Icons**: Lucide React
 - **Data Source**: TheMealDB API (Public)
 
-## 📂 Architecture
+ Architecture
 
 The project follows a clean separation of concerns:
 
@@ -37,15 +37,15 @@ The project follows a clean separation of concerns:
 - **`components/`**: Reusable UI components (MealCard, CategoryPill, RecipeView, etc.).
 - **`types.ts`**: Centralized TypeScript definitions for API responses and application state.
 
-## 🚀 Getting Started
+ Getting Started
 
-### Prerequisites
+ Prerequisites
 
 - Node.js (v18 or higher)
 - npm or yarn
 - A generic API Key for Google Gemini (AI Studio)
 
-### Installation
+# Installation
 
 1. **Clone the repository**
    ```bash
@@ -72,13 +72,10 @@ The project follows a clean separation of concerns:
    npm start
    ```
 
-## 🧠 Caching Strategy
+# Caching Strategy
 
 To satisfy web service performance requirements locally, the app implements a custom `CacheService`:
 - **Storage**: In-memory Map.
 - **Eviction**: LRU (Least Recently Used) policy when the size limit (100 items) is reached.
 - **TTL**: Data expires after 10 minutes to ensure freshness while reducing network load.
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
