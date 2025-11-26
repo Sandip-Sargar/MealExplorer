@@ -1,0 +1,5 @@
+{
+  "name": "Copy of TheMealDB Explorer",
+  "description": "A comprehensive culinary explorer using TheMealDB API with built-in caching and Gemini AI chef assistance.",
+  "requestFramePermissions": []
+}
